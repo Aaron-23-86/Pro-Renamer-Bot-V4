@@ -24,7 +24,7 @@ Deploy on Heroku
 </p>
 
 Deploy in your vps
-```
+```sh
 git clone https://github.com/FayasNoushad/Rename-Bot
 cd Rename-Bot
 pip3 install -r requirements.txt
@@ -39,10 +39,6 @@ python3 bot.py
 * `BOT_TOKEN` Your bot token from @BotFather
 * `AUTH_USERS` Allow only pre-defined users to use this bot
 * `TIME_LIMIT` For time to next process in second
-
-### Requirements
-
-`pip3 install -r requirements.txt`
 
 ### Accounts
 
