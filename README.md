@@ -15,7 +15,7 @@ License -> https://github.com/FayasNoushad/Rename-Bot/blob/main/LICENSE
 
 ## Deploy
 
-##### Deploy on Heroku
+### Deploy on Heroku
 
 <p align="left">
   <a href="https://heroku.com/deploy?template=https://github.com/FayasNoushad/Rename-Bot">
@@ -26,7 +26,7 @@ License -> https://github.com/FayasNoushad/Rename-Bot/blob/main/LICENSE
   </a>
 </p>
 
-##### Deploy in your vps
+### Deploy in your vps
 
 ```sh
 git clone https://github.com/FayasNoushad/Rename-Bot
