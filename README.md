@@ -1,4 +1,4 @@
-# Rename-Bot 
+# 🤖 Rename-Bot 
 
 A simple telegram file or media rename bot with permanent thumbnail support
 
@@ -11,16 +11,16 @@ Copyright permission under GNU General Public License v3.0
 License -> https://github.com/FayasNoushad/Rename-Bot/blob/main/LICENSE
 ```
 
-* [Deploy](#deploy)
+* [Deploy](#-deploy)
      * [Deploy on Heroku](#deploy-on-heroku)
      * [Deploy on your vps](#deploy-in-your-vps)
-* [Variables](#variables)
-* [Accounts](#accounts)
-* [Credits](#credits)
+* [Variables](#-variables)
+* [Accounts](#-accounts)
+* [Credits](#-credits)
 
 ---
 
-## Deploy
+## ⚙ Deploy
 
 ### Deploy on Heroku
 
@@ -45,7 +45,7 @@ python3 bot.py
 
 ---
 
-## Variables
+## 🖊️ Variables
 
 - `API_HASH` Your API Hash from my.telegram.org
 - `API_ID` Your API ID from my.telegram.org
@@ -55,7 +55,7 @@ python3 bot.py
 
 ---
 
-## Accounts
+## 💬 Accounts
 
 - [Twitter](https://twitter.com/FayasNoushad)
 - [YouTube](https://youtube.com/channel/UCo3BrCslEn8ru34gTXyfVnQ)
@@ -63,7 +63,7 @@ python3 bot.py
 - [Telegram](https://telegram.me/FayasNoushad)
 ---
 
-### Credits
+### 👨‍💻 Credits
 
 - [Fayas Noushad](https://github.com/FayasNoushad)
 - [Shrimadhav UK](https://github.com/SpEcHIDe)
