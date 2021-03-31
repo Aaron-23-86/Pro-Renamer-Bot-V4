@@ -11,6 +11,13 @@ Copyright permission under GNU General Public License v3.0
 License -> https://github.com/FayasNoushad/Rename-Bot/blob/main/LICENSE
 ```
 
+* [Deploy](#deploy)
+     * [Deploy on Heroku](#deploy-on-heroku)
+     * [Deploy on your vps](#deploy-in-your-vps)
+* [Variables](#variables)
+* [Accounts](#accounts)
+* [Credits](#credits)
+
 ---
 
 ## Deploy
