@@ -60,4 +60,5 @@ python3 bot.py
 
 - [Fayas Noushad](https://github.com/FayasNoushad)
 - [Shrimadhav UK](https://github.com/SpEcHIDe)
+- [Pranav Govind](https://github.com/prgofficial)
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
