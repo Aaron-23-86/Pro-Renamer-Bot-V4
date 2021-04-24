@@ -32,6 +32,9 @@ ADL_BOT_RQ = {}
 START_TEXT = """
 Hello {} , I'am a simple file or media rename bot with permanent thumbnail support.
 
+Made by @FayasNoushad
+"""
+HELP_TEXT = """
 <b><u>Rename</u></b>
 ➠ Send me any telegram file or media.
 ➠ Choose appropriate option.
@@ -47,6 +50,41 @@ Hello {} , I'am a simple file or media rename bot with permanent thumbnail suppo
 
 Made by @FayasNoushad
 """
+ABOUT_TEXT = """
+- **Bot :** `Rename Bot`
+- **Creator :** [Fayas](https://telegram.me/TheFayas)
+- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
+- **Credits :** `Everyone in this journey`
+- **Source :** [Click here](https://github.com/FayasNoushad/Rename-Bot)
+- **Language :** [Python3](https://python.org)
+- **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
+- **Server :** [Heroku](https://heroku.com)
+
+"""
+START_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('Help', callback_data='help'),
+        InlineKeyboardButton('About', callback_data='about'),
+        InlineKeyboardButton('Close', callback_data='close')
+        ]]
+    )
+HELP_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('About', callback_data='about'),
+        InlineKeyboardButton('Close', callback_data='close')
+        ]]
+    )
+ABOUT_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
+        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        ],[
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('Help', callback_data='help'),
+        InlineKeyboardButton('Close', callback_data='close')
+        ]]
+    )
 
 if __name__ == "__main__" :
     if not os.path.isdir(DOWNLOAD_LOCATION):
@@ -59,26 +97,44 @@ FayasNoushad = Client(
     api_hash=os.environ.get("API_HASH")
 )
 
-
-
 @FayasNoushad.on_callback_query()
 async def cb_handler(bot, update):
-
-    if update.data == "rename":
+    if update.data == "home":
+        await update.message.edit_text(
+            text=START_BUTTONS.format(update.from_user.mention),
+            reply_markup=START_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "help":
+        await update.message.edit_text(
+            text=HELP_TEXT,
+            reply_markup=HELP_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "about":
+        await update.message.edit_text(
+            text=ABOUT_TEXT,
+            reply_markup=ABOUT_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "rename":
         await update.message.delete()
         await force_name(bot, update.message)
-
-    if update.data == "cancel":
-        await update.message.edit_text(text="<code>Process Cancelled</code>")
+    elif update.data == "cancel":
+        await update.message.edit_text(
+            text="<code>Process Cancelled</code>",
+            disable_web_page_preview=True
+        )
+    else:
+        await update.message.delete()
 
 @FayasNoushad.on_message(filters.command(["start"]))
 async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=START_TEXT.format(update.from_user.mention),
-        parse_mode="html",
         disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ JOIN UPDATES CHANNEL ⚙', url='https://telegram.me/FayasNoushad')]]),
+        reply_markup=START_BUTTONS,
         reply_to_message_id=update.message_id
     )
 
