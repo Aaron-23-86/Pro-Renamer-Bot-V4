@@ -26,7 +26,7 @@ from PIL import Image
 from database import *
 
 DOWNLOAD_LOCATION = "./DOWNLOADS"
-AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split( ))
 PROCESS_MAX_TIMEOUT = int(os.environ.get("TIME_LIMIT"))
 ADL_BOT_RQ = {}
 START_TEXT = """
@@ -59,10 +59,12 @@ ABOUT_TEXT = """
 - **Language :** [Python3](https://python.org)
 - **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
 - **Server :** [Heroku](https://heroku.com)
-
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
+        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
+        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        ],
         InlineKeyboardButton('Help', callback_data='help'),
         InlineKeyboardButton('About', callback_data='about'),
         InlineKeyboardButton('Close', callback_data='close')
@@ -77,9 +79,6 @@ HELP_BUTTONS = InlineKeyboardMarkup(
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
-        ],[
         InlineKeyboardButton('Home', callback_data='home'),
         InlineKeyboardButton('Help', callback_data='help'),
         InlineKeyboardButton('Close', callback_data='close')
