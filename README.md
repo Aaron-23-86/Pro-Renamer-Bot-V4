@@ -21,9 +21,6 @@ License -> https://github.com/FayasNoushad/Rename-Bot/blob/main/LICENSE
   <a href="https://heroku.com/deploy?template=https://github.com/FayasNoushad/Rename-Bot">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
-  <a href="https://youtu.be/Yt20BOuUs-A">
-    <img height="30px" src="https://img.shields.io/badge/How%20To%20Deploy-red?style=for-the-badge&logo=youtube">
-  </a>
 </p>
 
 ### Deploy in your vps
