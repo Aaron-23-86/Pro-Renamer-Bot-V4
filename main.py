@@ -1,5 +1,5 @@
 # Made with python3
-# (C) @FayasNoushad
+# (C) @FayasNoushad, Shrimadhav UK, Pranav Govind
 # Copyright permission under GNU General Public License v3.0
 # All rights reserved by FayasNoushad
 # License -> https://github.com/FayasNoushad/Rename-Bot/blob/main/LICENSE
