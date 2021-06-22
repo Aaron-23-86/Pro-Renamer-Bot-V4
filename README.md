@@ -4,11 +4,7 @@ A simple telegram file or media rename bot with permanent thumbnail support
 
 ```
 Scrapped some code from @SpEcHIDe's AnyDLBot Repository
-Please fork this repository don't import code
 Made with Python3
-(C) @FayasNoushad, Shrimadhav UK, Pranav Govind
-Copyright permission under GNU General Public License v3.0
-License -> https://github.com/FayasNoushad/Rename-Bot/blob/main/LICENSE
 ```
 
 ---
