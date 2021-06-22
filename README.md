@@ -11,7 +11,8 @@ Made with Python3
 
 ## Deploy
 
-### Deploy on Heroku
+<details>
+  <summary><b>Deploy on Heroku</b></summary>
 
 <p align="left">
   <a href="https://heroku.com/deploy?template=https://github.com/FayasNoushad/Rename-Bot">
@@ -19,7 +20,10 @@ Made with Python3
   </a>
 </p>
 
-### Deploy in your vps
+</details>
+
+<details>
+  <summary><b>Deploy in your vps</b></summary>
 
 ```sh
 git clone https://github.com/FayasNoushad/Rename-Bot
@@ -28,6 +32,8 @@ pip3 install -r requirements.txt
 # <Create Variables appropriately>
 python3 main.py
 ```
+
+</details>
 
 ---
 
