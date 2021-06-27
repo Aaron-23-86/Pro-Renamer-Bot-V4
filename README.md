@@ -2,6 +2,8 @@
 
 A simple telegram file or media rename bot with permanent thumbnail support
 
+---
+
 ```
 Scrapped some code from @SpEcHIDe's AnyDLBot Repository
 Made with Python3
